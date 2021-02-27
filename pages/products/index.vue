@@ -96,10 +96,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scopped>
+<style lang="scss" scoped>
 #categories {
   width: 100%;
-
   position: relative;
   padding-top: 85px;
   @include for-phone-only {
@@ -109,6 +108,7 @@ export default {
     font-size: 12px;
     font-weight: 600;
     padding: 8px 0;
+    text-align: center;
     @include for-tablet-portrait-up {
       display: none;
     }

@@ -502,6 +502,7 @@ export default {
 
       ul {
         list-style: none;
+        padding: 0;
         li {
           margin: 16px 0;
           img {
