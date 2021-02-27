@@ -1,0 +1,32 @@
+{
+  "name": "kajave-furniture-nuxt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.5",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "child_process": "^1.0.2",
+    "core-js": "^3.8.3",
+    "firebase": "^8.2.9",
+    "flamelink": "^1.0.0-alpha.34",
+    "fs": "^0.0.1-security",
+    "joi": "^17.4.0",
+    "net": "^1.0.2",
+    "node-sass": "^4.9.0",
+    "nuxt": "^2.14.12",
+    "sass-loader": "^7.1.0",
+    "tls": "^0.0.1",
+    "vue-carousel": "^0.18.0",
+    "vue-izitoast": "^1.2.1",
+    "vue-material": "^1.0.0-beta-15",
+    "vue-sticky-directive": "^0.0.8",
+    "vue-zoomer": "^0.3.9"
+  },
+  "devDependencies": {}
+}
