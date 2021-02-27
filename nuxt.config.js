@@ -48,8 +48,16 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
-    "@nuxtjs/style-resources"
+    "@nuxtjs/style-resources",
+    "@nuxtjs/sitemap"
   ],
+  sitemap: {
+    sitemaps: [
+      {
+        path: "sitemap.xml"
+      }
+    ]
+  },
   styleResources: {
     // your settings here
     scss: ["~assets/global.scss"]

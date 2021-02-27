@@ -193,6 +193,9 @@ export default {
   border-top: 0.2px solid rgb(190, 190, 190);
   border-bottom: 0.2px solid rgb(190, 190, 190);
   text-align: center !important;
+  @include for-phone-only {
+    padding: 8px 0;
+  }
   @include for-tablet-portrait-up {
     display: none;
   }
@@ -207,7 +210,9 @@ export default {
 #factory {
   width: 100%;
   padding-top: 85px;
-
+  @include for-phone-only {
+    padding-top: 55px;
+  }
   .heading {
     font-family: Exo;
     font-style: normal;

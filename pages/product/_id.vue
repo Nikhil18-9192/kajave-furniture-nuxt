@@ -39,7 +39,9 @@
         </div>
       </div>
       <hr />
-      <p style="margin:8px 0;">*Fabrics available as per your choices.</p>
+      <p style="margin:8px 0; text-align: center;">
+        *Fabrics available as per your choices.
+      </p>
       <hr />
     </div>
     <div class="showcase-desktop">
@@ -92,7 +94,15 @@ import app from "@/utils/firebase";
 
 export default {
   name: "SingleProductView",
-
+  async asyncData({ route }) {
+    const res = await app.content.get({
+      schemaKey: "5OXzHGfHvLxrybi3VGTq",
+      filters: [["id", "==", route.params.id]]
+    });
+    let product = res[route.params.id];
+    product.imgs = res[route.params.id].imgs.map(img => img.id);
+    return { product };
+  },
   data() {
     return {
       productName: "Doncaster Chair",
@@ -121,7 +131,7 @@ export default {
       ]
     };
   },
-  mounted() {},
+
   methods: {
     navigateBack: function() {
       this.$router.go(-1);
@@ -200,30 +210,21 @@ export default {
     },
     getImagesFromServer: function() {
       const products = [];
-      // const res = await app.content.get({
-      //   schemaKey: "5OXzHGfHvLxrybi3VGTq",
-      //   filters: [["id", "==", this.$route.params.id]]
-      // });
-      // console.log(res);
-      const product = this.$store.getters.getProducts.find(item => {
-        return item.id == this.$route.params.id;
-      });
-
-      this.productName = product.name;
-      this.productDesc = product.description;
-      product.imgs.forEach(imgRef => {
+      this.productName = this.product.name;
+      this.productDesc = this.product.description;
+      this.product.imgs.forEach(imgRef => {
         app.storage
           .getURL({
-            fileId: imgRef.id
+            fileId: imgRef
           })
           .then(res => {
             products.push(res);
           });
       });
-
       this.productImages = products;
     }
   },
+
   mounted() {
     window.scrollTo(0, 0);
     this.getImagesFromServer();
@@ -255,7 +256,7 @@ export default {
   width: 100%;
   position: relative;
   overflow: hidden;
-  padding-top: 1px;
+  padding-top: 82px;
   .showcase-phone {
     @include for-tablet-portrait-up {
       display: none;
@@ -391,7 +392,7 @@ export default {
 
     ul {
       list-style: none;
-
+      padding: 0;
       li {
         margin: 9px 0;
 

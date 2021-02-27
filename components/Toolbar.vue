@@ -197,7 +197,11 @@ export default {
     top: 54px;
     transform: translateY(-500px);
     transition: 0.5s all ease;
-
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
     li {
       font-size: 18px;
       padding: 8px 0;

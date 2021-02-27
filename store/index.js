@@ -27,7 +27,6 @@ export const actions = {
         commit("SET_PRODUCTS", {
           name: val.name,
           description: val.description,
-          imgs: val.imgs,
           type: val.type,
           img: val.img,
           id: key,

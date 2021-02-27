@@ -88,7 +88,7 @@ export default {
     font-size: 18px;
     color: #9e866a;
     text-transform: uppercase;
-
+    line-height: 1;
     @include for-tablet-portrait-up {
       font-size: 36px;
       margin-top: 32px;

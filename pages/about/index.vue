@@ -177,6 +177,9 @@ export default {
   padding-top: 85px;
   position: relative;
   overflow: hidden;
+  @include for-phone-only {
+    padding-top: 55px;
+  }
   .heading {
     font-family: Exo;
     font-style: normal;

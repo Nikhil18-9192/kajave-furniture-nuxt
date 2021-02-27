@@ -89,6 +89,9 @@ export default {
   width: 100%;
   position: relative;
   text-align: center;
+  @include for-phone-only {
+    padding-top: 55px;
+  }
   .heading {
     font-family: Exo;
     font-style: normal;

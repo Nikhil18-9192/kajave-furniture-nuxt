@@ -30,6 +30,7 @@
         <Testimonials />
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
@@ -39,7 +40,7 @@ import Categories from "@/components/Home/Categories";
 import WhyUs from "@/components/Home/WhyUs";
 import Testimonials from "@/components/Home/Testimonial";
 import CarouselHome from "@/components/Home/CarouselHome";
-
+import Footer from "@/components/Home/Footer";
 export default {
   name: "home",
   components: {
@@ -47,7 +48,8 @@ export default {
     Categories,
     WhyUs,
     Testimonials,
-    CarouselHome
+    CarouselHome,
+    Footer
   },
   data() {
     return {};

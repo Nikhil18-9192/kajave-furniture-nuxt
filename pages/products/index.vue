@@ -99,9 +99,12 @@ export default {
 <style lang="scss" scopped>
 #categories {
   width: 100%;
-  padding-top: 1px;
+
   position: relative;
   padding-top: 85px;
+  @include for-phone-only {
+    padding-top: 55px;
+  }
   .text-1 {
     font-size: 12px;
     font-weight: 600;
