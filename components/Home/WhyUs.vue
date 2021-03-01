@@ -91,10 +91,6 @@ export default {
       max-height: 500px;
     }
 
-    @include for-desktop-up {
-      max-height: 428px;
-    }
-
     .why-item {
       display: inline-flex;
       align-items: center;
@@ -177,6 +173,7 @@ export default {
           height: 1px;
           background: #ffeed3;
           margin-top: 16px;
+          float: left;
         }
       }
     }

@@ -30,7 +30,6 @@
         <Testimonials />
       </div>
     </div>
-    <Footer />
   </div>
 </template>
 
@@ -40,7 +39,7 @@ import Categories from "@/components/Home/Categories";
 import WhyUs from "@/components/Home/WhyUs";
 import Testimonials from "@/components/Home/Testimonial";
 import CarouselHome from "@/components/Home/CarouselHome";
-import Footer from "@/components/Home/Footer";
+
 export default {
   name: "home",
   components: {
@@ -48,8 +47,7 @@ export default {
     Categories,
     WhyUs,
     Testimonials,
-    CarouselHome,
-    Footer
+    CarouselHome
   },
   data() {
     return {};
@@ -62,9 +60,6 @@ export default {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  @include for-phone-only {
-    padding-bottom: 57px;
-  }
 
   .text-1 {
     font-size: 12px;

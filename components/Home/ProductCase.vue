@@ -144,6 +144,10 @@ export default {
       justify-content: center;
 
       hr {
+        height: 1px;
+        background: #000;
+        width: 100%;
+        margin: 0;
         @include for-tablet-portrait-up {
           display: none;
         }

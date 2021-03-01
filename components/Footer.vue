@@ -1,23 +1,5 @@
 <template>
   <div id="ff">
-    <div class="nav-top">
-      <ul id="nav-phone">
-        <li v-for="menu in menuItems" :key="menu.name">
-          <router-link :to="menu.link">{{ menu.name }}</router-link>
-        </li>
-      </ul>
-      <div class="info">
-        <p>
-          <span style="color:#9E866A; font-weight:500">Email:</span
-          >kolhapur@kajavefurniture.com
-        </p>
-        <p>
-          <span style="color:#9E866A; font-weight:500">Address:</span> 9/1/3,
-          Lonar vasahat, Near Menon and Menon, Kolhapur, Maharashtra 416005
-        </p>
-      </div>
-    </div>
-
     <div class="nav-bottom">
       <div class="social">
         <!-- <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
@@ -44,7 +26,7 @@
       </div>
       <ul>
         <li v-for="menu in menuItems" :key="menu.name">
-          <router-link :to="menu.link">{{ menu.name }}</router-link>
+          <nuxt-link :to="menu.link">{{ menu.name }}</nuxt-link>
         </li>
       </ul>
       <div class="info">
@@ -66,7 +48,7 @@
           <a
             target="_blank"
             href="https://www.formecmedia.com"
-            style="color:aqua"
+            style="color:aqua; font-family: Exo, sans-serif !important;"
             >Formec Media.</a
           >
         </span>
@@ -87,7 +69,7 @@ export default {
         },
         {
           name: "Products",
-          link: "/allproducts"
+          link: "/products"
         },
         {
           name: "Factory",
@@ -118,15 +100,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scopped>
-#nav-phone {
-  @include for-phone-only {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-}
+<style lang="scss" scoped>
 #ff {
   width: 100%;
   display: flex;
@@ -139,7 +113,7 @@ export default {
     text-decoration: none;
     color: #80776a;
     position: relative;
-    &.router-link-exact-active {
+    &.nuxt-link-exact-active {
       color: rgb(173, 173, 173);
       text-decoration: none;
       &::after {
@@ -152,7 +126,7 @@ export default {
         left: 0;
       }
     }
-    &.router-link-active {
+    &.nuxt-link-active {
       text-decoration: none;
     }
   }

@@ -41,6 +41,7 @@ export default {
     height: 100%;
 
     h4 {
+      font-family: "Exo", sans-serif !important;
       font-style: normal;
       font-weight: 600;
       font-size: 12px;

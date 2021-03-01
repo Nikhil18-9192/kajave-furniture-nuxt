@@ -2,22 +2,33 @@
   <div>
     <Toolbar />
     <Nuxt />
+    <TopNav id="topNav" />
     <GetQuote />
-    <Footer />
+    <Footer
+      :class="$route.path == '/' || $route.path == '/faq' ? 'footer' : ''"
+    />
+    <FooterHome v-if="$route.path == '/' || $route.path == '/faq'" />
   </div>
 </template>
 <script>
-export default {};
+import FooterHome from "@/components/Home/Footer";
+export default {
+  components: {
+    FooterHome
+  }
+};
 </script>
-<style>
-body {
-  font-family: "Exo", sans-serif !important;
-
-  /* -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box; */
+<style lang="scss" scoped>
+.footer {
+  @include for-phone-only {
+    padding-bottom: 60px;
+  }
+}
+#topNav {
+  display: none;
+  @include for-phone-only {
+    display: block;
+  }
 }
 
 *,

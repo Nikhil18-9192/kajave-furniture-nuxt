@@ -139,6 +139,7 @@ export default {
   overflow: hidden;
 
   .copyright {
+    font-family: "Exo", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 9px;
@@ -154,6 +155,7 @@ export default {
   }
 
   .quote-heading {
+    font-family: "Exo", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -176,6 +178,7 @@ export default {
       margin: 0 auto;
     }
     .submit {
+      font-family: "Exo", sans-serif;
       background: #c4a989;
       color: black;
       padding: 8px 20px;
