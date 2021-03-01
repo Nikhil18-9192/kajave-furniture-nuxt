@@ -7,14 +7,14 @@
     <Footer
       :class="$route.path == '/' || $route.path == '/faq' ? 'footer' : ''"
     />
-    <FooterHome v-if="$route.path == '/' || $route.path == '/faq'" />
+    <ProductBtn v-if="$route.path == '/' || $route.path == '/faq'" />
   </div>
 </template>
 <script>
-import FooterHome from "@/components/Home/Footer";
+import ProductBtn from "@/components/Home/AllProductsBtn";
 export default {
   components: {
-    FooterHome
+    ProductBtn
   }
 };
 </script>

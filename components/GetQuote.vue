@@ -107,24 +107,19 @@ export default {
     },
     submitToServer() {
       const data = {
-        name: this.name,
-        email: this.email,
-        mobile: this.mobile,
-        message: this.message,
-        city: this.city
+        payload: {
+          client: "Kajve Furniture",
+          name: this.name,
+          email: this.email,
+          mobile: this.mobile,
+          message: this.message,
+          city: this.city
+        }
       };
-      return new Promise((resolve, reject) => {
-        fetch(`.netlify/functions/notify`, {
-          method: "POST",
-          body: JSON.stringify(data)
-        })
-          .then(response => {
-            resolve(response);
-          })
-          .catch(err => {
-            reject(err);
-          });
-      });
+      return this.$axios.$post(
+        `https://formec-mail-api.vercel.app/notify`,
+        data
+      );
     }
   }
 };
