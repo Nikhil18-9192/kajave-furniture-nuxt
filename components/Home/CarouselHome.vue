@@ -17,7 +17,7 @@
           :style="{ backgroundImage: `url(${item.img})` }"
         >
           <video
-            poster="https://firebasestorage.googleapis.com/v0/b/kajave-calculation-app.appspot.com/o/vid-thumb.jpg?alt=media&token=e83de01c-693c-4795-a62e-f14b9c5047df"
+            poster="https://firebasestorage.googleapis.com/v0/b/kajave-calculation-app.appspot.com/o/thumb.jpg?alt=media&token=41f3b099-a04d-47e7-b3ca-5dcb4d085342"
             controls
             autoplay
             v-if="item.video"
@@ -50,7 +50,7 @@ export default {
         {
           text: "Crafting happiness since 1900",
           video:
-            "https://firebasestorage.googleapis.com/v0/b/kajave-calculation-app.appspot.com/o/WhatsApp%20Video%202021-01-22%20at%206.00.12%20PM.mp4?alt=media&token=4326abcf-ce21-4279-9f9b-873a3fb24fa4"
+            "https://firebasestorage.googleapis.com/v0/b/kajave-calculation-app.appspot.com/o/KajaveFurnitureVideo.mp4?alt=media&token=947814bf-551c-4bd5-9bad-9010f3a446a4"
         },
         {
           text: "Quality Furniture every home needs",

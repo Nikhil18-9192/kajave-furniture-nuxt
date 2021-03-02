@@ -103,9 +103,29 @@ export default {
     product.imgs = res[route.params.id].imgs.map(img => img.id);
     return { product };
   },
+  head() {
+    return {
+      title: this.product.name,
+      meta: [
+        {
+          hid: "og:image",
+          name: "og:image",
+
+          property: "og:image",
+          content: this.product.img
+        },
+        {
+          hid: "description",
+          name: "description",
+          property: "og:description",
+          content: this.product.description
+        }
+      ]
+    };
+  },
   data() {
     return {
-      productName: "Doncaster Chair",
+      productName: "",
       selectedImg: 0,
       zoomerShown: false,
       productImages: [],
