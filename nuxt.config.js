@@ -9,7 +9,12 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Kajave Furniture is well known to provide customized design solutions in traditional, ethnic antique, contemporary and modern styles in solid wood. With a successful beginning from initially a furniture distributor, to setting up our own factory and infrastructure to support, to manufacturing our branded furniture Kajave Furniture has taken a stride towards forwarding integrated progress."
+      }
     ],
     link: [
       { rel: "icon", type: "image/*", href: "/favicon.png" },

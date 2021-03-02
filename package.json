@@ -1,1 +1,30 @@
-{"name":"kajave-furniture-nuxt","version":"1.0.0","private":true,"scripts":{"dev":"nuxt","build":"nuxt build","start":"nuxt start","generate":"nuxt generate"},"dependencies":{"@nuxtjs/axios":"^5.12.5","@nuxtjs/sitemap":"^2.4.0","@nuxtjs/style-resources":"^1.0.0","core-js":"^3.8.3","firebase":"^8.2.9","flamelink":"^1.0.0-alpha.34","joi":"^17.4.0","vue-carousel":"^0.18.0","vue-izitoast":"^1.2.1","vue-material":"^1.0.0-beta-11","vue-sticky-directive":"^0.0.8","vue-zoomer":"^0.3.9","@nuxt/core":"^2.14.12"}}
+{
+  "name": "kajave-furniture-nuxt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.5",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "core-js": "^3.8.3",
+    "firebase": "^8.2.9",
+    "flamelink": "^1.0.0-alpha.34",
+    "joi": "^17.4.0",
+    "nuxt": "^2.15.2",
+    "vue-carousel": "^0.18.0",
+    "vue-izitoast": "^1.2.1",
+    "vue-material": "^1.0.0-beta-15",
+    "vue-sticky-directive": "^0.0.8",
+    "vue-zoomer": "^0.3.9"
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.1"
+  }
+}
