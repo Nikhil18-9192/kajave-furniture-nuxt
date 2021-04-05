@@ -72,7 +72,7 @@ export default {
     flex-direction: row;
     flex-wrap: wrap;
     @include for-tablet-portrait-up {
-      margin-top: 80px;
+      // margin-top: 80px;
       padding: 48px 48px;
       background: #f1f1f1;
       justify-content: center;

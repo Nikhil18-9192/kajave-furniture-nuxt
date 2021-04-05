@@ -107,6 +107,7 @@ export default {
   padding-top: 16px;
   position: relative;
   padding-bottom: 16px;
+  margin-bottom: 32px;
 
   @include for-tablet-portrait-up {
     height: 500px;
@@ -115,8 +116,8 @@ export default {
   .carousel {
     width: 100%;
     display: flex;
-    height: 100%;
-    position: relative;
+    height: 90%;
+    position: absolute;
 
     @include for-phone-only {
       align-items: center;
@@ -187,10 +188,12 @@ export default {
     }
   }
   .navigation {
+    position: absolute;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    bottom: 0;
 
     .dot {
       width: 6px;
