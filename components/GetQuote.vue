@@ -77,7 +77,7 @@ export default {
     };
   },
   methods: {
-    submitForm: function() {
+    submitForm: function(event) {
       event.preventDefault();
       const { email, message, city, name, mobile } = this;
       const validation = quoteFormValidation({

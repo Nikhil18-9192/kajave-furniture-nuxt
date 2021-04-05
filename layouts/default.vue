@@ -3,7 +3,7 @@
     <Toolbar />
     <Nuxt />
     <TopNav id="topNav" />
-    <!-- <GetQuote /> -->
+    <GetQuote />
     <Footer
       :class="$route.path == '/' || $route.path == '/faq' ? 'footer' : ''"
     />
