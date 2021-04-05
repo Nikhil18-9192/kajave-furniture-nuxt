@@ -3,7 +3,7 @@
     <Toolbar />
     <Nuxt />
     <TopNav id="topNav" />
-    <GetQuote />
+    <!-- <GetQuote /> -->
     <Footer
       :class="$route.path == '/' || $route.path == '/faq' ? 'footer' : ''"
     />
@@ -36,5 +36,6 @@ export default {
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 </style>

@@ -184,18 +184,18 @@ export default {
     }
   }
 }
-@import "~vue-material/dist/theme/engine";
+// @import "~vue-material/dist/theme/engine";
 
-@include md-register-theme(
-  "kajave",
-  (
-    primary: #9e866a,
-    // The primary color of your application
-      accent: #c4a989,
-    // The accent or secondary color
-      theme: dark // This can be dark or light
-  )
-);
+// @include md-register-theme(
+//   "kajave",
+//   (
+//     primary: #9e866a,
+//     // The primary color of your application
+//       accent: #c4a989,
+//     // The accent or secondary color
+//       theme: dark // This can be dark or light
+//   )
+// );
 
-@import "~vue-material/dist/theme/all";
+// @import "~vue-material/dist/theme/all";
 </style>

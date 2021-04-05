@@ -36,7 +36,6 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: "~/plugins/vue-material.js", ssr: false },
     { src: "~/plugins/carousel.js", ssr: false },
     { src: "~/plugins/sticky.js", ssr: false },
     { src: "~/plugins/zoomer.js", ssr: false },
